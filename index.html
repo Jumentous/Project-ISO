@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Project ISO: Privacy Policy and Terms of Service</title>
+<title>Umbral Idle: Last Salvage: Privacy Policy and Terms of Service</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -86,22 +86,27 @@
 </head>
 <body>
 <main>
-  <h1 id="top">Project ISO: Privacy Policy and Terms of Service</h1>
-  <p class="meta">Last updated: August 17, 2026</p>
+  <h1 id="top">Umbral Idle: Last Salvage: Privacy Policy and Terms of Service</h1>
+  <p class="meta">Beast of Burden Studios · Last updated: August 19, 2026</p>
 
   <div class="notice">
-    This policy describes both features that are currently live and
-    features that are planned but not yet released. Sections below are
-    marked clearly where a feature has not launched yet. This document
-    will be revised as those features (Cloud Save, GameAnalytics,
-    in-app purchases) actually ship.
+    This policy covers <strong>Umbral Idle: Last Salvage</strong> only
+    (developed under the working title "Project ISO," which is why that
+    name may still appear in older store listings or files). It
+    describes both features that are currently live and features that
+    are planned but not yet released; sections below are marked clearly
+    where a feature has not launched yet. This document will be revised
+    as those features (Cloud Save, GameAnalytics, in-app purchases)
+    actually ship. Other Beast of Burden Studios titles, including
+    Temptation, are unreleased and not covered by this policy; each
+    will get its own privacy policy and terms before launch.
   </div>
 
   <p><a href="#terms-of-service">Jump to Terms of Service</a></p>
 
   <h2>Advertising</h2>
   <p>
-    Project ISO uses Unity LevelPlay (ironSource) as its ad mediation
+    The app uses Unity LevelPlay (ironSource) as its ad mediation
     platform, with Google AdMob connected as a partner-bidding network.
     Four rewarded video ad placements are available in the app —
     Offline 2x, Salvage 2x, Refit Skip, and Residuum Bonus — all of
@@ -118,19 +123,35 @@
     <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.
   </p>
 
-  <h2>Account Data &amp; Save Sync <span class="placeholder">(Not Yet Live)</span></h2>
+  <h2>Account Data &amp; Save Sync</h2>
   <p>
-    Project ISO plans to offer cloud save syncing via Google Play
-    Games Services sign-in, using Unity Authentication, so your
-    progress can carry across devices. <strong>This feature has not
-    launched yet.</strong> When it does, signing in will be optional,
-    and this policy will be updated to describe exactly what account
-    data is collected and how it's used before the feature goes live.
+    The app offers optional cloud save syncing through Google Play
+    Games Services sign-in, using Unity Gaming Services (Unity
+    Authentication) to link your save to your Google Play Games
+    account. Signing in is optional: you can play entirely offline
+    with a local-only save, and nothing about the game is gated behind
+    signing in.
+  </p>
+  <p>
+    If you choose to sign in, the app receives a Google Play Games
+    account identifier (via a server auth code, exchanged through
+    Unity Authentication) so it can associate your save data with your
+    account. Your save data (game progress: resources, facilities,
+    tech tree state, and similar in-game values) is then stored with
+    Unity Gaming Services' Cloud Save so it can sync across devices
+    signed into the same Google Play Games account. The app does not
+    receive your Google account email address, contacts, or any other
+    Google account data beyond what Play Games Services provides for
+    sign-in. See
+    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>
+    for Play Games Services, and
+    <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" target="_blank" rel="noopener">Unity's Privacy Policy</a>
+    for Unity Gaming Services.
   </p>
 
   <h2>Analytics</h2>
   <p>
-    Project ISO does not currently collect any gameplay or usage
+    The app does not currently collect any gameplay or usage
     analytics. No analytics SDK is active in the app at this time. If
     an analytics service is added in the future, this policy will be
     updated first to disclose what is collected.
@@ -138,17 +159,17 @@
 
   <h2>In-App Purchases <span class="placeholder">(Not Yet Live)</span></h2>
   <p>
-    Project ISO plans to offer optional in-app purchases through its
+    The app plans to offer optional in-app purchases through its
     in-game Store. <strong>Real-money billing is not yet active.</strong>
     If/when in-app purchases go live, all payment processing will be
-    handled entirely by Google Play's own billing system — Project ISO
+    handled entirely by Google Play's own billing system: the app
     itself does not receive, process, or store your payment card
     details.
   </p>
 
   <h2>Third-Party Services</h2>
   <p>
-    Project ISO integrates with the following third-party services.
+    The app integrates with the following third-party services.
     This list covers only what is actually integrated today: anything
     planned but not yet live is marked accordingly, matching the rest
     of this policy.
@@ -160,10 +181,22 @@
       above. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.
     </li>
     <li>
+      <strong>Google Play Games Services</strong>: used for the optional
+      sign-in described under Account Data &amp; Save Sync above. See
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.
+    </li>
+    <li>
+      <strong>Unity Gaming Services</strong> (Unity Authentication and
+      Cloud Save): used to link your optional sign-in to your synced
+      save data, as described under Account Data &amp; Save Sync above.
+      See
+      <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" target="_blank" rel="noopener">Unity's Privacy Policy</a>.
+    </li>
+    <li>
       <strong>Google Play</strong> <span class="placeholder">(Not Yet Live)</span>:
       planned for Play Billing, to process in-app purchases once they
       launch (see In-App Purchases above). Payment processing will be
-      handled entirely by Google Play; Project ISO itself does not
+      handled entirely by Google Play; the app itself does not
       receive, process, or store payment details.
     </li>
   </ul>
@@ -172,11 +205,13 @@
   <p>
     Using the app, particularly if an error occurs, may involve
     third-party code (currently, the ad mediation SDK described under
-    Advertising above) automatically collecting information such as
-    device model, operating system version, app configuration or
-    state, and timestamps, for diagnostic purposes. This happens today
-    because the ad SDK is integrated, not because of any dedicated
-    analytics system: see Analytics above.
+    Advertising above, and Unity Gaming Services if you've signed in,
+    described under Account Data &amp; Save Sync above) automatically
+    collecting information such as device model, operating system
+    version, app configuration or state, and timestamps, for
+    diagnostic purposes. This happens today because those SDKs are
+    integrated, not because of any dedicated analytics system: see
+    Analytics above.
   </p>
 
   <h2>What We Don't Collect</h2>
@@ -206,7 +241,7 @@
 
   <h2>Children's Privacy</h2>
   <p>
-    Project ISO does not knowingly collect personal information from
+    The app does not knowingly collect personal information from
     children under the age of 13. If we discover that we have
     inadvertently collected personal information from a child under
     13, we will delete it. If you are a parent or guardian and believe
@@ -217,18 +252,18 @@
 
   <h2>Data Retention &amp; Account Deletion</h2>
   <p>
-    Currently, Project ISO stores your game progress locally on your
-    device only. There is no account system today, so there is no
-    server-side save data to retain or delete: uninstalling the app
-    removes your local save data along with it.
+    The app always stores your game progress locally on your device.
+    If you never sign in with Google Play Games, that's the only copy
+    that exists: there is no server-side save data, and uninstalling
+    the app removes your local save data along with it.
   </p>
   <p>
-    Once Cloud Save <span class="placeholder">(Not Yet Live)</span> launches
-    (see Account Data &amp; Save Sync above), save data tied to your
-    Play Games sign-in will be retained for as long as your account
-    remains active. At that point, you will be able to request
-    deletion of that data using the details in the Contact section
-    below.
+    If you choose to sign in, a synced copy of your save data is also
+    retained in Unity Gaming Services' Cloud Save, tied to your Google
+    Play Games account, for as long as you keep that data synced. You
+    can stop syncing at any time by signing out in Settings, and you
+    can request deletion of your synced save data using the details in
+    the Contact section below.
   </p>
 
   <h2>Security</h2>
@@ -269,7 +304,7 @@
 
   <h2>License, Not a Sale</h2>
   <p>
-    Project ISO is licensed to you for personal, non-commercial use.
+    Umbral Idle: Last Salvage is licensed to you for personal, non-commercial use.
     It is not sold to you. You may not modify, reverse-engineer,
     decompile, or redistribute the app or its assets.
   </p>
@@ -286,7 +321,7 @@
 
   <h2>Intellectual Property</h2>
   <p>
-    Project ISO's game design, code, and original creative content
+    Umbral Idle: Last Salvage's game design, code, and original creative content
     are owned by the developer. Third-party licensed assets (art,
     fonts, music, and sound effects) are used under their respective
     licenses; see the in-app Credits screen for the full attribution
@@ -305,7 +340,7 @@
 
   <h2>Google Play Terms Apply Too</h2>
   <p>
-    Because Project ISO is distributed through Google Play, using
+    Because Umbral Idle: Last Salvage is distributed through Google Play, using
     the app also means agreeing to
     <a href="https://play.google.com/about/play-terms/" target="_blank" rel="noopener">Google Play's own Terms of Service</a>,
     in addition to this document. If the two conflict, Google Play's
@@ -356,7 +391,8 @@
   </p>
 
   <footer>
-    Project ISO
+    Umbral Idle: Last Salvage · Beast of Burden Studios ·
+    <a href="https://jumentous.github.io/">jumentous.github.io</a>
   </footer>
 </main>
 </body>
