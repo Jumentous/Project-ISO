@@ -87,19 +87,18 @@
 <body>
 <main>
   <h1 id="top">Umbral Idle: Last Salvage: Privacy Policy and Terms of Service</h1>
-  <p class="meta">Beast of Burden Studios · Last updated: August 19, 2026</p>
+  <p class="meta">Beast of Burden Studios · Last updated: August 24, 2026</p>
 
   <div class="notice">
     This policy covers <strong>Umbral Idle: Last Salvage</strong> only
     (developed under the working title "Project ISO," which is why that
     name may still appear in older store listings or files). It
-    describes both features that are currently live and features that
-    are planned but not yet released; sections below are marked clearly
-    where a feature has not launched yet. This document will be revised
-    as those features (Cloud Save, GameAnalytics, in-app purchases)
-    actually ship. Other Beast of Burden Studios titles, including
-    Temptation, are unreleased and not covered by this policy; each
-    will get its own privacy policy and terms before launch.
+    describes the app as currently distributed through Google Play
+    testing tracks. Where a feature is integrated but not yet switched
+    on, the section says so. Other Beast of Burden Studios titles,
+    including Temptation, are unreleased and not covered by this
+    policy; each will get its own privacy policy and terms before
+    launch.
   </div>
 
   <p><a href="#terms-of-service">Jump to Terms of Service</a></p>
@@ -108,11 +107,12 @@
   <p>
     The app uses Unity LevelPlay (ironSource) as its ad mediation
     platform, with Google AdMob connected as a partner-bidding network.
-    Four rewarded video ad placements are available in the app —
-    Offline 2x, Salvage 2x, Refit Skip, and Residuum Bonus — all of
-    which are entirely optional and only triggered when you tap a
-    button to watch one. The game does not show interstitial or banner
-    ads of any kind.
+    Four rewarded video ad placements exist in the app (Offline 2x,
+    Salvage 2x, Refit Skip, and Residuum Bonus), all entirely optional
+    and only triggered when you tap a button to watch one. The game
+    does not show interstitial or banner ads of any kind.
+    <strong>In current test builds these placements are integrated but
+    not yet serving ads.</strong>
   </p>
   <p>
     When you choose to watch a rewarded ad, the ad mediation SDK and
@@ -121,6 +121,19 @@
     and deliver ads, consistent with their own data practices. For
     details on Google's role as an ad partner, see
     <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.
+  </p>
+  <h2>Consent</h2>
+  <p>
+    On first launch, players in the European Economic Area, the United
+    Kingdom, and Switzerland are shown a consent prompt provided by
+    Google's User Messaging Platform (UMP). Your choice controls whether
+    the advertising SDKs may use your data for personalised ads and
+    whether the analytics described below is switched on at all: if you
+    decline, the analytics SDK is never initialised on your device.
+    Outside those regions the prompt is not shown and the app's default
+    (non-personalised) settings apply. You can change your choice at
+    any time through your device's advertising settings, by clearing
+    the app's data, or by contacting us (see Contact below).
   </p>
 
   <h2>Account Data &amp; Save Sync</h2>
@@ -139,7 +152,13 @@
     account. Your save data (game progress: resources, facilities,
     tech tree state, and similar in-game values) is then stored with
     Unity Gaming Services' Cloud Save so it can sync across devices
-    signed into the same Google Play Games account. The app does not
+    signed into the same Google Play Games account. While signed in,
+    the app also reports achievement unlocks and four leaderboard
+    scores (lifetime Salvage, Iso-Cores, Collapses, and lifetime
+    Insights, all derived from your game progress) to Google Play
+    Games so they appear in your Play Games profile; your display name
+    and avatar on those leaderboards come from Google, not from the
+    app. The app does not
     receive your Google account email address, contacts, or any other
     Google account data beyond what Play Games Services provides for
     sign-in. See
@@ -151,28 +170,59 @@
 
   <h2>Analytics</h2>
   <p>
-    The app does not currently collect any gameplay or usage
-    analytics. No analytics SDK is active in the app at this time. If
-    an analytics service is added in the future, this policy will be
-    updated first to disclose what is collected.
+    The app integrates the GameAnalytics SDK to understand how the game
+    is played and balanced. It is switched on only after the consent
+    prompt described above has been answered, and never if you decline.
+    When active, it records anonymous gameplay events (for example:
+    tutorial steps completed, tiers unlocked, Collapses performed,
+    rewarded ads watched, daily rewards claimed, and time away from the
+    game) together with device information such as device model,
+    operating system version, app version, a randomly generated install
+    identifier, and session timings. Events contain in-game numbers
+    only: no name, email address, contacts, precise location, or
+    content you type is ever sent. See
+    <a href="https://gameanalytics.com/privacy" target="_blank" rel="noopener">GameAnalytics' Privacy Policy</a>.
+  </p>
+  <h2>Crash Reporting</h2>
+  <p>
+    The app uses Unity's built-in engine diagnostics to report crashes
+    and unhandled errors so they can be fixed. A report contains
+    technical information about the failure (stack trace, device model,
+    operating system version, app version, memory state) and no
+    personal information beyond what is needed to identify the device
+    class. See
+    <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" target="_blank" rel="noopener">Unity's Privacy Policy</a>.
+  </p>
+  <h2>Notifications</h2>
+  <p>
+    The app can schedule optional local reminders on your device (for
+    example when a Salvage Run has returned or the Collapse floor is
+    reached). These are created and stored entirely on your device;
+    no push notification service is used and nothing is sent to us. You
+    can turn them off individually or entirely in Settings, or through
+    the system notification settings. On Android 14 and later, precise
+    reminder timing needs the "Alarms &amp; reminders" permission, which
+    the app only requests when you tap the corresponding Settings
+    button.
   </p>
 
-  <h2>In-App Purchases <span class="placeholder">(Not Yet Live)</span></h2>
+  <h2>In-App Purchases</h2>
   <p>
-    The app plans to offer optional in-app purchases through its
-    in-game Store. <strong>Real-money billing is not yet active.</strong>
-    If/when in-app purchases go live, all payment processing will be
-    handled entirely by Google Play's own billing system: the app
-    itself does not receive, process, or store your payment card
-    details.
+    The app offers optional in-app purchases through its in-game Store,
+    processed entirely by Google Play's own billing system: the app
+    itself never receives, processes, or stores your payment card
+    details. The app receives a purchase receipt from Google Play so it
+    can deliver what you bought, and it checks that receipt on the
+    device against Google's signature to prevent tampering; the receipt
+    is not sent to us or to any third party. Purchases you own are
+    restored automatically from Google Play when you reinstall or
+    change device.
   </p>
 
   <h2>Third-Party Services</h2>
   <p>
     The app integrates with the following third-party services.
-    This list covers only what is actually integrated today: anything
-    planned but not yet live is marked accordingly, matching the rest
-    of this policy.
+    This list covers what is actually integrated today.
   </p>
   <ul>
     <li>
@@ -193,25 +243,40 @@
       <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" target="_blank" rel="noopener">Unity's Privacy Policy</a>.
     </li>
     <li>
-      <strong>Google Play</strong> <span class="placeholder">(Not Yet Live)</span>:
-      planned for Play Billing, to process in-app purchases once they
-      launch (see In-App Purchases above). Payment processing will be
-      handled entirely by Google Play; the app itself does not
-      receive, process, or store payment details.
+      <strong>Google Play Billing</strong>: processes in-app purchases
+      (see In-App Purchases above). Payment processing is handled
+      entirely by Google Play; the app itself does not receive,
+      process, or store payment details.
+    </li>
+    <li>
+      <strong>Google User Messaging Platform</strong>: shows the
+      regional consent prompt described under Consent above and stores
+      your choice on the device.
+    </li>
+    <li>
+      <strong>GameAnalytics</strong>: consent-gated gameplay analytics,
+      as described under Analytics above. See
+      <a href="https://gameanalytics.com/privacy" target="_blank" rel="noopener">GameAnalytics' Privacy Policy</a>.
+    </li>
+    <li>
+      <strong>Unity engine diagnostics</strong>: crash and error
+      reporting, as described under Crash Reporting above. See
+      <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" target="_blank" rel="noopener">Unity's Privacy Policy</a>.
     </li>
   </ul>
 
   <h2>Log Data</h2>
   <p>
-    Using the app, particularly if an error occurs, may involve
-    third-party code (currently, the ad mediation SDK described under
-    Advertising above, and Unity Gaming Services if you've signed in,
-    described under Account Data &amp; Save Sync above) automatically
-    collecting information such as device model, operating system
-    version, app configuration or state, and timestamps, for
-    diagnostic purposes. This happens today because those SDKs are
-    integrated, not because of any dedicated analytics system: see
-    Analytics above.
+    Using the app, particularly if an error occurs, may involve the
+    third-party SDKs listed above automatically collecting information
+    such as device model, operating system version, app configuration
+    or state, IP address, and timestamps, for diagnostic purposes and
+    to operate their services. Separately, on launch and when returning
+    from the background, the app makes a lightweight request to a
+    Google server purely to read the current time from the response
+    header; this is used to keep offline earnings and daily rewards
+    honest if the device clock has been changed. That request carries
+    no account or game data.
   </p>
 
   <h2>What We Don't Collect</h2>
@@ -219,6 +284,8 @@
     <li>No account creation is required to play.</li>
     <li>No email address is collected by the game itself.</li>
     <li>No user-generated content (chat, images, text, etc.) is collected or shared.</li>
+    <li>No precise or approximate location is collected by the game. (Ad and analytics partners may infer a coarse region from your IP address under their own policies.)</li>
+    <li>No data is sold, and none is shared with third parties for their own advertising purposes beyond the ad delivery described above.</li>
   </ul>
 
   <h2>Your Rights &amp; Choices</h2>
@@ -290,14 +357,13 @@
   <hr class="section-divider">
 
   <h1 id="terms-of-service" class="section-title">Terms of Service</h1>
-  <p class="meta">Last updated: August 17, 2026</p>
+  <p class="meta">Last updated: August 24, 2026</p>
 
   <div class="notice">
     These Terms of Service work alongside the Privacy Policy above:
     that section covers what data is collected and why, this section
-    covers the rules for using the app. As with the Privacy Policy,
-    anything not live yet is marked accordingly, and this document
-    will be revised as those features actually ship.
+    covers the rules for using the app. This document will be revised
+    as the app develops; see the "Last updated" date above.
   </div>
 
   <p><a href="#top">Back to top</a></p>
@@ -328,14 +394,24 @@
     list rather than a duplicate copy here.
   </p>
 
-  <h2>In-App Purchases <span class="placeholder">(Not Yet Live)</span></h2>
+  <h2>In-App Purchases</h2>
   <p>
-    When the in-game Store's purchase catalog goes live, all
-    purchases will be processed entirely through Google Play's own
+    All purchases are processed entirely through Google Play's own
     billing system, subject to Google Play's own Terms of Service in
-    addition to this document. Virtual currencies and resources
-    earned or purchased in-game have no real-world monetary value and
-    cannot be exchanged, transferred, or redeemed for cash.
+    addition to this document, including Google Play's refund policy.
+    Virtual currencies and resources earned or purchased in-game have
+    no real-world monetary value and cannot be exchanged, transferred,
+    or redeemed for cash. Some in-game features award items by chance
+    (Recovery Operations can recover crew members); the odds are
+    displayed inside the app wherever such a chance applies, and no
+    real-money purchase directly buys a chance-based item.
+  </p>
+  <h2>Test Builds</h2>
+  <p>
+    While the app is distributed through Google Play testing tracks,
+    balance, content, and save formats may change between builds. We
+    will try to preserve progress, but test-track saves are not
+    guaranteed to carry over to the final release.
   </p>
 
   <h2>Google Play Terms Apply Too</h2>
